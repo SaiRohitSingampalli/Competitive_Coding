@@ -1,0 +1,58 @@
+import java.util.*;
+import java.io.*;
+
+public class Main {
+  public static void main(String args[]) throws IOException {
+    
+    //write your code here
+    Scanner sc=new Scanner(System.in);
+    int j=sc.nextInt(); 
+    int arr[]=new int[100]; 
+    int k=0;
+    int e=0;
+    int o=0;
+    while(k<j)
+    {
+      arr[k]=sc.nextInt(); 
+      if (arr[k]%2==0){
+        e = e + 1;
+      }
+      else{
+        o = o + 1;
+      }
+      k++; 
+      
+    }
+    
+    int ev[] = new int[e];
+    int od[] = new int[o];
+    int ee=0,oo=0;
+    
+    for(int z=0;z<j;z++){
+      
+      if(arr[z]%2==0){
+        ev[ee] = arr[z];
+        ee = ee + 1;
+      }
+      else{
+        od[oo] = arr[z];
+        oo = oo + 1;
+      }
+      
+      
+    }
+    for(int x=0;x<e;x++){
+      System.out.print(ev[x]);
+      System.out.print(" ");
+    }
+    System.out.println("");
+    for(int y=0;y<o;y++){
+      System.out.print(od[y]);
+      System.out.print(" ");
+    }
+    
+
+    
+    
+  }
+}

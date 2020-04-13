@@ -1,0 +1,29 @@
+import java.util.*;
+import java.io.*;
+
+public class Main {
+  public static void main(String args[]) throws IOException {
+    
+    //write your code here
+    Scanner sc=new Scanner(System.in);
+    int m = sc.nextInt();
+    int n = sc.nextInt();
+    int k = sc.nextInt();
+    for(int i = 1;i<=m;i++){
+      sc.nextLine();
+      for(int j = 1;j<=n;j++){
+        int number = sc.nextInt();
+        System.out.print(number*k);
+        System.out.print(" ");
+        
+        
+      }
+      System.out.println("");
+      
+      
+    }
+
+
+    
+  }
+}

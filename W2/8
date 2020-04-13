@@ -1,0 +1,46 @@
+import java.util.*;
+import java.io.*;
+
+public class Main {
+  public static void main(String args[]) throws IOException {
+    
+    //write your code here
+    Scanner sc=new Scanner(System.in);
+    int m = sc.nextInt();
+    int n = sc.nextInt();
+    int a[][]=new int[m][n];
+    int b[][]=new int[m][n];
+    
+    for(int i = 0;i<m;i++){
+      sc.nextLine();
+      for(int j=0;j<n;j++){
+         a[i][j] = sc.nextInt();
+      }
+  }
+  for(int k = 0;k<m;k++){
+    sc.nextLine();
+    for(int l=0;l<n;l++){
+      b[k][l] = sc.nextInt();
+    }
+  }
+  for(int p=0;p<m;p++){
+    for(int q=0;q<n;q++){
+      System.out.print(a[p][q]+b[p][q]);
+      System.out.print(" ");
+    }
+    System.out.println("");
+  }
+  int c[][]=new int[m][n];
+  for(int r=0;r<m;r++){
+    for(int s=0;s<n;s++){
+      c[r][s] = 0;
+      for(int t=0;t<n;t++){
+        c[r][s]+=a[r][t]*b[t][s]; 
+      }
+      System.out.print(c[r][s]+" ");
+    }
+    System.out.println("");
+  }
+    
+  }
+}

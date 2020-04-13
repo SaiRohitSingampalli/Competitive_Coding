@@ -1,0 +1,43 @@
+import java.util.*;
+import java.io.*;
+
+public class Main {
+  public static void main(String args[]) throws IOException {
+    
+	  Scanner sc=new Scanner(System.in);
+    int len = sc.nextInt();
+    while(len>0){
+      sc.nextLine();
+      long max = 0;
+      long min = 0;
+      long n = sc.nextInt();
+      sc.nextLine();
+      max = sc.nextInt();
+      min = max;
+      for(int i=2;i<=n;i++){
+        long ch = sc.nextInt();
+        if(ch > max){
+          max = ch;
+        }
+        else if(ch < min){
+          min = ch;
+        }
+        
+      }
+      
+      System.out.print(min);
+      System.out.print(" ");
+      System.out.println(max);
+      
+      
+      
+      len = len - 1;
+      
+    }
+		
+		
+
+	
+    
+  }
+}
