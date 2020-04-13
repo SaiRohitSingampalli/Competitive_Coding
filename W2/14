@@ -21,6 +21,8 @@ public class Main {
         
       }
       
+      r = r % n;
+      
       for(int j=n-r;j<n;j++){
         System.out.print(a[j]+" ");
       }
@@ -29,12 +31,6 @@ public class Main {
       }
       
       System.out.println("");
-      
-      
-      
-      
-
-
       
       len = len - 1;
     }
