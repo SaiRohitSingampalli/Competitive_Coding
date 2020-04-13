@@ -8,7 +8,6 @@ public class Main {
     Scanner sc=new Scanner(System.in);
     long len=sc.nextLong();
   
-    
     while(len>0){
       
       
